@@ -153,23 +153,20 @@ main {
     height: 32px;
     font-size: 14px;
     padding-left: 27px;
+    margin-top: 5px;
 
     
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
+
+
 .top-categories {
     display: flex;
-    padding: 0px 214px 0 214px;
+    justify-content: center;
     font-size: 10px;
     align-items: center; 
     text-align: center; 
+    gap: 20px;
     
 
 }
@@ -268,12 +265,12 @@ footer {
 }
 .heartbutton .heart{
     position: absolute;
-    margin-top: 3px;
+    margin-top: 7px;
     padding-left: 5px;
 }
 .star-img{
     display: flex;
-    margin-top: 4px;
+    margin-top: 12px;
     margin-left: -5px;
 }
 .points{
@@ -283,4 +280,167 @@ footer {
 
 .cat-clothes p{
     font-size: 10px;
+}
+.nav-button{
+    width: 104px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid #2264d1;
+    background-color: #fff;
+}
+.nav{
+    gap: 15px;
+}
+.show button{
+    width: 85px;
+    height: 36px;
+    border: none;
+    background-color: #EBF2FF;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.button-with-image{
+    width: 68px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+}
+
+.tags1-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 160px;
+    
+}
+.tags2-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 104px;
+}
+.tags3-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 74px;
+}
+.tags4-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 120px;
+}
+.tags5-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 122px;
+}
+.tags6-style{
+    height: 32px;
+    background-color: #EDEDF0;
+    font-size: 14px;
+    border-radius: 99px;
+    width: 152px;
+}
+
+.filter{
+    background-color: #F7F7FA;
+    border-radius: 4px;
+}
+.year{
+    padding-top: 7px;
+    padding-left: 7px;
+}
+.years{
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-bottom: 10px;
+}
+
+.footer-content{
+    display: flex;
+   
+    gap: 15px;
+    align-items: center; 
+    text-align: center; 
+    
+    
+}
+
+
+.footer-blocks p{
+    display: flex;
+    width: 361px;
+   
+    height: 156px;
+
+}
+
+.img-footer{
+    width: 80px;
+    height: 80px;
+   
+  
+
+}
+
+.footer-1{
+    width: 361px;
+    height: 156px;
+    background-color: #EDEDF0;
+    
+}
+.footer-1 h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.footer-2 h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.footer-3 h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.footer-2{
+    width: 361px;
+    height: 156px;
+    background-color: #EDEDF0;
+}
+.footer-3{
+    width: 361px;
+    height: 156px;
+    background-color: #EDEDF0;
+}
+.footer-1 p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.footer-2 p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+}
+.footer-3 p{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
 }
