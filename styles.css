@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -85,7 +88,7 @@ aside ul li {
 }
 
 main {
-    width: 80%;
+ 
     padding-left: 20px;
 }
 .segment-1 {
@@ -111,9 +114,10 @@ main {
 
 
 .product-grid {
-    display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -20px;
 }
 
 .product {
@@ -131,30 +135,40 @@ main {
    
     font-size: 16px;
     margin-top: -6px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+
 }
 .product h2{
     font-size: 24px;
     padding-top: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
 
 }
 .text-product{
     margin-top: -6px;
     font-size: 14px;
+    color: #787885;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+
 }
 
 .product button {
     background-color: #fff;
     color: #2264d1;
-    border: 1px solid #2264d1;
+    border: 1px solid #9DC2FF;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
     width: 88px;
-    height: 32px;
+    height: 38  px;
     font-size: 14px;
     padding-left: 27px;
     margin-top: 5px;
-
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
     
 }
 
@@ -265,16 +279,20 @@ main {
 }
 .heartbutton .heart{
     position: absolute;
-    margin-top: 7px;
+    margin-top:10px;
     padding-left: 5px;
 }
 .star-img{
     display: flex;
-    margin-top: 12px;
+    margin-top: 13px;
     margin-left: -5px;
 }
 .points{
     font-size: 14px;
+    margin-right: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     
 }
 
@@ -286,78 +304,59 @@ main {
     height: 40px;
     border-radius: 5px;
     font-size: 20px;
-    border: 1px solid #2264d1;
+    border: 1px solid #9DC2FF;
     background-color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    color: #2264D1;
+
+    
 }
 .nav{
     gap: 15px;
 }
 .show button{
     width: 85px;
-    height: 36px;
+    height: 30px;
     border: none;
     background-color: #EBF2FF;
     font-size: 14px;
     border-radius: 2px;
+    color: #787885;
+    font-family: "Inter", sans-serif;
+
+    
 }
 .button-with-image{
     width: 68px;
-    height: 36px;
+    height: 30px;
     border: none;
     border-radius: 2px;
+    background-color: #EBF2FF;
+   
 }
 
-.tags1-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 160px;
-    
-}
-.tags2-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 104px;
-}
-.tags3-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 74px;
-}
-.tags4-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 120px;
-}
-.tags5-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 122px;
-}
-.tags6-style{
-    height: 32px;
-    background-color: #EDEDF0;
-    font-size: 14px;
-    border-radius: 99px;
-    width: 152px;
-}
+
 
 .filter{
     background-color: #F7F7FA;
     border-radius: 4px;
+    width: 304px;
+    height: 424px;
+
+}
+
+.years li{
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
 .year{
-    padding-top: 7px;
+    padding-top: 15px;
     padding-left: 7px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+
 }
 .years{
     padding-top: 10px;
@@ -367,12 +366,11 @@ main {
 
 .footer-content{
     display: flex;
-   
     gap: 15px;
     align-items: center; 
     text-align: center; 
-    
-    
+    justify-content: center;
+    margin-top: 30px;
 }
 
 
@@ -403,19 +401,26 @@ main {
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
 }
 .footer-2 h2{
     font-size: 20px;
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
 }
 .footer-3 h2{
     font-size: 20px;
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
 }
+
 .footer-2{
     width: 361px;
     height: 156px;
@@ -431,16 +436,104 @@ main {
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    color: #5A5B6A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
 }
 .footer-2 p{
     font-size: 14px;
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    color: #5A5B6A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
 }
 .footer-3 p{
     font-size: 14px;
     display: flex;
     justify-content: center;
     margin-top: -10px;
+    color: #5A5B6A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+}
+
+
+.tags-1{
+    width: 160px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.tags-style{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #787885;
+}
+.tags-2{
+    width: 104px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.tags-3{
+    width: 74px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.tags-4{
+    width: 120px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.tags-5{
+    width: 122px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.tags-6{
+    width: 152px;
+    height: 28px;
+    background-color: #EBF2FF;
+    border-radius: 99px;
+}
+.related{
+    font-size: 14px;
+}
+.top-categories{
+    color: #787885;
+}
+.computers p{
+    font-size: 14px;
+    margin-top: -12px;
+}
+.img-3{
+    margin-top: 8px;
+}
+.block{
+    margin-top: 15px;
+}
+.all-text h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+.all-text p{
+    color: #787885;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+.cat-sh li{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.cat-sh p{
+    color: #787885;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
 }
