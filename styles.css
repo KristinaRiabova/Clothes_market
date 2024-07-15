@@ -219,6 +219,7 @@ aside ul li {
     height: 56px;
 }
 
+
 .search {
     position: relative;
     display: flex;
@@ -313,7 +314,7 @@ aside ul li {
 }
 .star-img{
     display: flex;
-    margin-top: 13px;
+    margin-top: 15px;
     margin-left: -5px;
 }
 .points{
@@ -322,6 +323,8 @@ aside ul li {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
+    padding-top: 2px;
+   
     
 }
 
@@ -590,3 +593,45 @@ aside ul li {
 
 
 
+.price-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.price-text1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-4{
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.discount{
+    width: 70px;
+    height: 20px;
+    background-color: #ECF7ED;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    color: #37833B;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.deal{
+    width: 70px;
+    height: 20px;
+    background-color: #FDEDF2;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    color: #C23564;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
