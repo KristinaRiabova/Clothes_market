@@ -58,7 +58,8 @@ header .search input {
 
 .container {
     display: flex;
-    padding: 20px;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 aside {
@@ -87,10 +88,7 @@ aside ul li {
     
 }
 
-main {
- 
-    padding-left: 20px;
-}
+
 .segment-1 {
     display: flex;
     justify-content: space-between;
@@ -111,24 +109,55 @@ main {
     align-items: center;
    
 }
+.but-img button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #2264D1;
+    border-radius: 5px;
+    transition: 1s;
+}
+
 
 
 .product-grid {
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: -20px;
+
 }
+
+
 
 .product {
-
-    padding: 20px;
-   
+    background-color: #fff;
+    padding: 10px;
     width: 259px;
-    height: 472px;
+    border-radius: 5px;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+.product::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+   
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.product:hover::after {
+    opacity: 1;
+}
 
 
 .product h3 {
@@ -324,9 +353,19 @@ main {
     border-radius: 2px;
     color: #787885;
     font-family: "Inter", sans-serif;
-
-    
+   
 }
+
+
+.show button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #2264D1;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+
 .button-with-image{
     width: 68px;
     height: 30px;
@@ -359,9 +398,9 @@ main {
 
 }
 .years{
-    padding-top: 10px;
+
     padding-left: 7px;
-    padding-bottom: 10px;
+   
 }
 
 .footer-content{
@@ -463,7 +502,7 @@ main {
 .tags-1{
     width: 160px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
 .tags-style{
@@ -476,31 +515,31 @@ main {
 .tags-2{
     width: 104px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
 .tags-3{
     width: 74px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
 .tags-4{
     width: 120px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
 .tags-5{
     width: 122px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color:  #EDEDF0;
     border-radius: 99px;
 }
 .tags-6{
     width: 152px;
     height: 28px;
-    background-color: #EBF2FF;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
 .related{
@@ -537,3 +576,17 @@ main {
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
+
+.filter-chevron{
+    display: flex;
+    gap: 98px;
+    align-items: center;
+}
+.filter-chevron img{
+    height: 24px;
+    width: 24px;
+    
+}
+
+
+
