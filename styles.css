@@ -128,7 +128,7 @@ aside ul li {
 
 
 
-.product {
+ .product {
     background-color: #fff;
     padding: 10px;
     width: 259px;
@@ -160,7 +160,7 @@ aside ul li {
 }
 
 
-.product h3 {
+ .product h3 {
    
     font-size: 16px;
     margin-top: -6px;
@@ -175,7 +175,7 @@ aside ul li {
     font-weight: 600;
 
 }
-.text-product{
+ .text-product{
     margin-top: -6px;
     font-size: 14px;
     color: #787885;
@@ -184,7 +184,7 @@ aside ul li {
 
 }
 
-.product button {
+ .product button {
     background-color: #fff;
     color: #2264d1;
     border: 1px solid #9DC2FF;
@@ -553,7 +553,7 @@ aside ul li {
 }
 .computers p{
     font-size: 14px;
-    margin-top: -12px;
+    margin-top: -5px;
 }
 .img-3{
     margin-top: 8px;
@@ -597,12 +597,14 @@ aside ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -15px;
 
 }
 .price-text1{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -15px;
 }
 .price-4{
     font-size: 24px;
@@ -635,3 +637,88 @@ aside ul li {
     justify-content: center;
     padding-top: 5px;
 }
+
+
+
+.list-view .product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.list-view .product img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.list-view  .product h2{
+    display: none;
+
+}
+
+.list-view .text-product{
+    display: none;
+}
+.list-view .star{
+    display: none;
+}
+.list-view .points{
+    display: none;
+
+}
+.list-view .heartbutton{
+    display: none;
+}
+.list-view  .product h3{
+    font-size: 14px;
+    align-items: center;
+   
+}
+.list-view .discount{
+    display: none;
+}
+.list-view .price-4{
+    display: none;;
+}
+.list-view .deal{
+    display: none;
+}
+
+.div-3 {
+    margin-top: 30px;
+}
+.div-4 {
+    margin-top: 27px;
+}
+.div-4-text{
+    margin-top: 39px;
+}
+.div-5-text{
+    margin-top: 57px;
+}
+.div-5{
+    margin-top: 30px;
+}
+.div-6-text{
+    margin-top: 35px;
+}
+.div-7{
+    margin-top: 35px;
+}
+.div-7-text{
+    margin-top: 47px;
+}
+.div-8-text{
+    margin-top: 30px;
+}
+.div-8{
+    margin-top: 20px;
+}
+.div-9{
+    margin-top: 23px;
+}
+

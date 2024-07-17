@@ -1,0 +1,308 @@
+@media only screen and (max-width: 600px) {
+    header {
+
+        padding: 10px;
+    }
+
+    header .logo h1 {
+        font-size: 15px;
+    }
+
+    header .search input {
+        display: none;
+
+
+    }
+
+    .search .end-image {
+        display: none;
+    }
+
+    .search .start-image {
+        display: none;
+    }
+
+    .nav-button {
+        width: 50px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 9px;
+        border: 1px solid #9DC2FF;
+        background-color: #fff;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+        color: #2264D1;
+
+    }
+
+    .top-categories {
+        display: grid;
+        justify-content: center;
+        font-size: 8px;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+
+    .top-categories img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .category-list {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        justify-items: center;
+
+    }
+
+
+    .aside {
+        display: none;
+    }
+
+
+
+    .footer-content {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer-blocks {
+        width: 100%;
+    }
+
+    .show button {
+        width: 50px;
+        height: 30px;
+        border: none;
+        background-color: #EBF2FF;
+        font-size: 9px;
+        border-radius: 2px;
+        color: #787885;
+        font-family: "Inter", sans-serif;
+    }
+
+    .product {
+        background-color: #fff;
+        padding: 10px;
+        width: 150px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    }
+
+    .button-with-image {
+        width: 50px;
+        height: 30px;
+        border: none;
+        border-radius: 2px;
+        background-color: #EBF2FF;
+    }
+
+    .button-with-image img {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .tags-style {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        font-size: 7px;
+        color: #787885;
+
+
+    }
+
+    .tags {
+        display: grid;
+        gap: 10px;
+        align-items: center;
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+    }
+
+    .img-grid {
+        width: 120px;
+    }
+
+    .star {
+        width: 10px;
+        height: 10px;
+    }
+
+    .product button {
+        background-color: #fff;
+        color: #2264d1;
+        border: 1px solid #9DC2FF;
+        padding-left: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 50px;
+
+        font-size: 8px;
+
+
+
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .heartbutton .heart {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        margin-top: 14px;
+    }
+
+    .points {
+        font-size: 8px;
+        margin-right: 15px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        padding-top: 7px;
+    }
+
+    .star-img {
+        display: flex;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .product h3 {
+        font-size: 10px;
+        margin-top: -6px;
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+    }
+
+    .product h2 {
+        font-size: 13px;
+        padding-top: 25px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .text-product {
+        margin-top: -6px;
+        font-size: 8px;
+        color: #787885;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+    }
+
+    .price-4 {
+        font-size: 15px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+    }
+
+    .discount {
+        width: 50px;
+        height: 15px;
+        background-color: #ECF7ED;
+        border-radius: 5px;
+        font-size: 8px;
+        font-family: "Inter", sans-serif;
+        font-weight: 200;
+        color: #37833B;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    .div-4 {
+        margin-top: 27px;
+    }
+
+    .price-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5px;
+    }
+
+    .related {
+        display: none;
+    }
+
+    .tags-1 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .tags-2 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .tags-3 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .tags-4 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .tags-5 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .tags-6 {
+        width: 80px;
+        height: 28px;
+        background-color: #EDEDF0;
+        border-radius: 99px;
+    }
+
+    .nav {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .nav img {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothes Market</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css">
+
 </head>
 
 <body>
@@ -16,8 +18,7 @@
         </div>
         <div class="search">
             <img src="assets/search.png" alt="Start Image" class="start-image">
-
-            <input type="text" placeholder="search">
+            <input type="text" id="search-input" placeholder="search">
             <img src="assets/close.png" alt="End Image" class="end-image">
         </div>
         <nav class="nav">
@@ -28,54 +29,55 @@
 
     </header>
     <div class="top-categories">
-        <div class="ca1-clothes">
+        <div class="cat" data-category="clothing-shoes">
             <img src="assets/hanger.png" alt="">
             <p>Clothing & Shoes</p>
         </div>
-        <div class="cat2-clothes">
+        <div class="cat" data-category="entertainment">
             <img src="assets/cinema.png" alt="">
             <p>Entertainment</p>
         </div>
-        <div class="cat3-clothes">
+        <div class="cat" data-category="music">
             <img src="assets/concert.png" alt="">
             <p>Music</p>
         </div>
-        <div class="cat4-clothes">
+        <div class="cat" data-category="sport-lifestyle">
             <img src="assets/fitness.png" alt="">
             <p>Sport & Lifestyle</p>
         </div>
-        <div class="cat5-clothes">
+        <div class="cat" data-category="pets">
             <img src="assets/pets.png" alt="">
             <p>Pets</p>
         </div>
-        <div class="cat6-clothes">
+        <div class="cat" data-category="kitchen-accessories">
             <img src="assets/restaraunt.png" alt="">
             <p>Kitchen Accessories</p>
         </div>
-        <div class="cat7-clothes">
+        <div class="cat" data-category="travel-equipment">
             <img src="assets/observation.png" alt="">
             <p>Travel Equipment</p>
         </div>
-        <div class="cat8-clothes">
+        <div class="cat" data-category="growing-garden">
             <img src="assets/barley.png" alt="">
             <p>Growing & Garden</p>
         </div>
-        <div class="cat9-clothes">
+        <div class="cat" data-category="electrical-tools">
+            <img src="assets/powerstation.png" alt="">
+            <p>Electrical Tools</p>
+        </div>
+        <div class="cat" data-category="mother-care">
             <img src="assets/babysitter.png" alt="">
             <p>Mother Care</p>
         </div>
-        <div class="cat10-clothes">
-            <img src="assets/powerstation.png" alt="">
+        <div class="cat" data-category="toys-entertainment">
+            <img src="assets/nuclear-station.png" alt="">
             <p>Toys & Entertainment</p>
         </div>
-        <div class="cat11-clothes">
+        <div class="cat" data-category="vintage">
             <img src="assets/ship-wheel.png" alt="">
             <p>Vintage</p>
         </div>
-        <div class="cat12-clothes">
-            <img src="assets/hanger.png" alt="">
-            <p>Clothing & Shoes</p>
-        </div>
+
     </div>
     <div class="container">
         <aside>
@@ -109,11 +111,11 @@
                         </div>
                         <div class="block">
                             <div class="cat-sh">
-                            
+
                                 <img src="assets/chevron_right.png" class="img-sh">
                                 <li>Consumer Electroinics</li>
-                       
-                             </div>
+
+                            </div>
                         </div>
                         <div class="cat-sh">
                             <img src="assets/chevron_right.png" class="img-sh">
@@ -129,8 +131,8 @@
             </div>
             <div class="filter">
                 <div class="filter-chevron">
-                        <h2 class="year">Year of manufacturing</h2>
-                        <img src="assets/chevron-up.png" alt="">
+                    <h2 class="year">Year of manufacturing</h2>
+                    <img src="assets/chevron-up.png" alt="">
                 </div>
                 <ul class="years">
                     <li><input type="checkbox"> 1954</li>
@@ -148,16 +150,16 @@
         <main>
             <div class="segment-1">
                 <div class="show">
-                    <button>Show all</button>
+                    <button id="show-all-button">Show all</button>
                     <button>Auction</button>
                     <button>Buy now</button>
                 </div>
                 <div class="but-img">
-                    <button class="button-with-image">
+                    <button class="button-with-image" id="list-view-btn">
                         <img src="assets/view-list.png" alt="Icon"></button>
-                    <button class="button-with-image">
+                    <button class="button-with-image" id="grid-view-btn">
                         <img src="assets/view-grid.png" alt="Icon"></button>
-                    
+
                 </div>
             </div>
             <div class="tags">
@@ -182,255 +184,298 @@
                 </div>
 
             </div>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="assets/Image.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image1.png" alt="Nail polish">
-                    <h3>Leather boots</h3>
-                    <h2>$13.95</h2>
-                    <p class="text-product">1258 bids, 359 watchers 
-                        $5.95 for shipping</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+            <div id="category-content">
+                <div class="product-grid" id="product-grid">
+                    <div class="product">
+                        <img src="assets/Image.png" alt="Nail polish" class="img-grid">
+                        <h3>Typewriter. Vintage</h3>
+                        <h2>$49.50</h2>
+                        <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
+                        <div class="star-button">
+                            <div class="star-img">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star-half.png" alt="" class="star">
+                            </div>
+                            <p class="points">5.00</p>
+                            <div class="heartbutton">
+                                <img src="assets/Left.png" alt="" class="heart">
+                                <button>Watch</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image11.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image10.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <div class="price-text">
-                        <p class="price-4">$49.50</p>
-                        <p class="discount">50% OFF</p>
-                    </div>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                    <div class="product">
+                        <img src="assets/Image1.png" alt="Nail polish" class="img-grid">
+                        <h3>Leather boots</h3>
+                        <h2>$13.95</h2>
+                        <p class="text-product">1258 bids, 359 watchers
+                            $5.95 for shipping</p>
+                        <div class="star-button">
+                            <div class="star-img">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star.png" alt="" class="star">
+                                <img src="assets/star-half.png" alt="" class="star">
+                            </div>
+                            <p class="points">5.00</p>
+                            <div class="heartbutton">
+                                <img src="assets/Left.png" alt="" class="heart">
+                                <button>Watch</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image7.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image6.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                    <div class="product">
+                        <img src="assets/Image11.png" alt="Nail polish" class="img-grid">
+                        <h3>Cat Toy</h3>
+                        <h2>$128.99</h2>
+                        <p class="text-product">Eligible for nothing :(</p>
+                        <div class="div-3">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image9.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
+                    <div class="product">
+                        <img src="assets/Image10.png" alt="Nail polish" class="img-grid">
+                        <h3>Plastic plugs and tubes for prototyping</h3>
+                        <div class="price-text">
+                            <p class="price-4">$12.48</p>
+                            <p class="discount">50% OFF</p>
                         </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image8.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                        <p class="text-product">Word-wide shipping is available</p>
+                        <div class="div-4">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image5.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image4.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
-                        </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                    <div class="product">
+                        <img src="assets/Image7.png" alt="Nail polish" class="img-grid">
+                        <h3>Bottle of tea. Drink every evening to generate better ideas!</h3>
+                        <h2>$12.48</h2>
+                        <p class="text-product">Word-wide shipping is available</p>
+                        <div class="div-5">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image3.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <div class="price-text1">
-                        <p class="price-4">$49.50</p>
-                        <p class="deal">Cool deal</p>
+                    <div class="product">
+                        <img src="assets/Image6.png" alt="Nail polish" class="img-grid">
+                        <h3>Prototyping items to create a lot if useless things...</h3>
+                        <div class="div-4-text">
+                            <h2>$128.99</h2>
+                            <p class="text-product">Free shipping</p>
+                        </div>
+                        <div class="div-5">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
+                    <div class="product">
+                        <img src="assets/Image9.png" alt="Nail polish" class="img-grid">
+                        <h3>Trousers. All sizes</h3>
+                        <div class="div-5-text">
+                            <h2>$13.95</h2>
+                            <p class="text-product">1258 bids, 359 watchers
+                                $5.95 for shipping</p>
                         </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                        <div class="div-6">
+                            <div class="star-button">
+
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product">
-                    <img src="assets/Image2.png" alt="Nail polish">
-                    <h3>Typewriter. Vintage</h3>
-                    <h2>$49.50</h2>
-                    <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
-                    <div class="star-button">
-                        <div class="star-img">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star.png" alt="" class="star">
-                            <img src="assets/star-half.png" alt="" class="star">
+                    <div class="product">
+                        <img src="assets/Image8.png" alt="Nail polish" class="img-grid">
+                        <h3>Envelope, Stripes, and Pencil</h3>
+                        <div class="div-5-text">
+                            <h2>$9.50</h2>
+                            <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
                         </div>
-                        <p class="points">5.00</p>
-                        <div class="heartbutton">
-                            <img src="assets/Left.png" alt="" class="heart">
-                            <button>Watch</button>
+                        <div class="div-6">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="assets/Image5.png" alt="Nail polish" class="img-grid">
+                        <h3>Professional set</h3>
+                        <div class="div-6-text">
+                            <h2>$128.99</h2>
+                            <p class="text-product">Word-wide shipping is available</p>
+                        </div>
+                        <div class="div-7">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="assets/Image4.png" alt="Nail polish" class="img-grid">
+                        <h3>Money tree</h3>
+                        <div class="div-6-text">
+                            <h2>$1111.68</h2>
+                            <p class="text-product">Word-wide shipping is available</p>
+                        </div>
+                        <div class="div-7">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="assets/Image3.png" alt="Nail polish" class="img-grid">
+                        <h3>Nail polish</h3>
+                        <div class="div-7-text">
+                            <div class="price-text1">
+                                <p class="price-4">$1.25</p>
+                                <p class="deal">Cool deal</p>
+                            </div>
+                            <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
+                        </div>
+                        <div class="div-8">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="assets/Image2.png" alt="Nail polish"class="img-grid">
+                        <h3>Makeup tool set</h3>
+                        <div class="div-8-text">
+                            <h2>$23.25</h2>
+
+                            <p class="text-product">1258 bids, 359 watchers
+                                $5.95 for shipping</p>
+                        </div>
+                        <div class="div-9">
+                            <div class="star-button">
+                                <div class="star-img">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star.png" alt="" class="star">
+                                    <img src="assets/star-half.png" alt="" class="star">
+                                </div>
+                                <p class="points">5.00</p>
+                                <div class="heartbutton">
+                                    <img src="assets/Left.png" alt="" class="heart">
+                                    <button>Watch</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="footer-content">
 
                 <div class="footer-1">
@@ -457,7 +502,7 @@
     </div>
 
 
-
+    <script src="script.js"></script>
 </body>
 
 </html>
