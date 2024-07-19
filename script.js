@@ -9,7 +9,7 @@ document.getElementById('grid-view-btn').addEventListener('click', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const categories = document.querySelectorAll('.cat');
+    const categories = document.querySelectorAll('.cat1');
     const categoryContent = document.getElementById('category-content');
     const showAllButton = document.getElementById('show-all-button');
 
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const products = {
         'clothing-shoes': `
-                     <div class="product">
-                        <img src="assets/Image1.png" alt="Nail polish">
+                    <div class="product">
+                        <img src="assets/Image1.png" alt="Nail polish" class="img-grid">
                         <h3>Leather boots</h3>
-                        <h2>$13.95</h2>
+                        <h2 class="boots">$13.95</h2>
                         <p class="text-product">1258 bids, 359 watchers
                             $5.95 for shipping</p>
                         <div class="star-button">
@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
 
                      <div class="product">
-                        <img src="assets/Image9.png" alt="Nail polish">
+                        <img src="assets/Image9.png" alt="Nail polish" class="img-grid">
                         <h3>Trousers. All sizes</h3>
                         <div class="div-5-text">
-                            <h2>$13.95</h2>
+                            <h2 class="trousers">$13.95</h2>
                             <p class="text-product">1258 bids, 359 watchers
                                 $5.95 for shipping</p>
                         </div>
@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
         `,
         'pets': `
-             <div class="product">
-                        <img src="assets/Image11.png" alt="Nail polish">
+            <div class="product">
+                        <img src="assets/Image11.png" alt="Nail polish" class="img-grid">
                         <h3>Cat Toy</h3>
-                        <h2>$128.99</h2>
+                        <h2 class="cat">$128.99</h2>
                         <p class="text-product">Eligible for nothing :(</p>
                         <div class="div-3">
                             <div class="star-button">
@@ -94,11 +94,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
         `,
         'kitchen-accessories': `
-        <div class="product">
-                        <img src="assets/Image5.png" alt="Nail polish">
+         <div class="product">
+                        <img src="assets/Image5.png" alt="Nail polish" class="img-grid">
                         <h3>Professional set</h3>
                         <div class="div-6-text">
-                            <h2>$128.99</h2>
+                            <h2 class="set">$128.99</h2>
                             <p class="text-product">Word-wide shipping is available</p>
                         </div>
                         <div class="div-7">
@@ -120,11 +120,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
    `,
 
-   'vintage': `
+        'vintage': `
                     <div class="product">
-                        <img src="assets/Image.png" alt="Nail polish">
+                        <img src="assets/Image.png" alt="Nail polish" class="img-grid">
                         <h3>Typewriter. Vintage</h3>
-                        <h2>$49.50</h2>
+                        <h2 class="vintage">$49.50</h2>
                         <p class="text-product">Eligible for Shipping To Mars or somewhere else</p>
                         <div class="star-button">
                             <div class="star-img">
@@ -142,9 +142,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         </div>
                     </div>
 `,
-    'growing-garden': `
+        'growing-garden': `
                         <div class="product">
-                        <img src="assets/Image10.png" alt="Nail polish">
+                        <img src="assets/Image10.png" alt="Nail polish" class="img-grid">
                         <h3>Plastic plugs and tubes for prototyping</h3>
                         <div class="price-text">
                             <p class="price-4">$12.48</p>
@@ -170,11 +170,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     </div>
     `,
 
-    'sport-lifestyle': `
+        'sport-lifestyle': `
                        <div class="product">
-                        <img src="assets/Image7.png" alt="Nail polish">
-                        <h3>Bottle of tea. Drink every evening to generate better ideas!</h3>
-                        <h2>$12.48</h2>
+                        <img src="assets/Image7.png" alt="Nail polish" class="img-grid">
+                        <h3 >Bottle of tea. Drink every evening to generate better ideas!</h3>
+                        <h2 class="tea">$12.48</h2>
                         <p class="text-product">Word-wide shipping is available</p>
                         <div class="div-5">
                             <div class="star-button">
@@ -202,24 +202,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     categories.forEach(cat => {
-        cat.addEventListener('click', function() {
+        cat.addEventListener('click', function () {
             const category = cat.getAttribute('data-category');
             showProducts(category);
         });
     });
 
-    showAllButton.addEventListener('click', function() {
-        
+    showAllButton.addEventListener('click', function () {
+
         categoryContent.innerHTML = initialContent;
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('search-input');
     const closeImage = document.querySelector('.end-image');
 
-   
-    closeImage.addEventListener('click', function() {
-        searchInput.value = ''; 
+
+    closeImage.addEventListener('click', function () {
+        searchInput.value = '';
+    });
+});
+
+document.querySelectorAll('.trigger').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const content = trigger.nextElementSibling;
+        content.dataset.isOpen = content.dataset.isOpen === 'true' ? 'false' : 'true';
     });
 });

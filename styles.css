@@ -8,6 +8,9 @@ body {
     background-color: #fff;
 }
 
+main{
+    margin-left: 34px;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -74,7 +77,7 @@ aside .category-list, aside .filter {
 }
 
 aside h2 {
-    margin-top: 0;
+    margin: 0;
     font-size: 16px;
 }
 
@@ -83,10 +86,7 @@ aside ul {
     padding: 0;
 }
 
-aside ul li {
-    margin-bottom: 10px;
-    
-}
+
 
 
 .segment-1 {
@@ -137,6 +137,7 @@ aside ul li {
     position: relative;
     overflow: hidden;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
+    height: 472px;
 }
 
 .product::after {
@@ -170,7 +171,7 @@ aside ul li {
 }
 .product h2{
     font-size: 24px;
-    padding-top: 25px;
+    
     font-family: "Inter", sans-serif;
     font-weight: 600;
 
@@ -285,19 +286,21 @@ aside ul li {
 }
 .all-text{
     display: flow;
+    margin-bottom: 12px;
 }
 .img-sh-all{
     width: 24px;
     height: 24px;
-    margin-top: 8px
+    margin-right: 8px;
+    margin-top: 8px;
 }
 .all-cat p{
     font-size: 14px;
-    margin-top: -10px;
+    margin: 0;
 }
 .cat-another{
     margin-left: 10px;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 .star-button{
     display: flex;
@@ -309,8 +312,10 @@ aside ul li {
 }
 .heartbutton .heart{
     position: absolute;
-    margin-top:10px;
-    padding-left: 5px;
+    margin-top: 11px;
+    padding-left: 5px;  
+    height: 28px;
+    width: 28px;
 }
 .star-img{
     display: flex;
@@ -394,8 +399,7 @@ aside ul li {
     font-weight: 300;
 }
 .year{
-    padding-top: 15px;
-    padding-left: 7px;
+
     font-family: "Inter", sans-serif;
     font-weight: 500;
 
@@ -553,7 +557,7 @@ aside ul li {
 }
 .computers p{
     font-size: 14px;
-    margin-top: -5px;
+    margin: 0;
 }
 .img-3{
     margin-top: 8px;
@@ -582,9 +586,13 @@ aside ul li {
 
 .filter-chevron{
     display: flex;
-    gap: 98px;
+    gap: 90px;
     align-items: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 .filter-chevron img{
     height: 24px;
     width: 24px;
@@ -597,14 +605,14 @@ aside ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -15px;
+    margin-top: 26px;
 
 }
 .price-text1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -15px;
+    margin-top: 35px;
 }
 .price-4{
     font-size: 24px;
@@ -694,12 +702,10 @@ aside ul li {
 .div-4 {
     margin-top: 27px;
 }
-.div-4-text{
-    margin-top: 39px;
+.div-4-text {
+    margin-top: 52px;
 }
-.div-5-text{
-    margin-top: 57px;
-}
+
 .div-5{
     margin-top: 30px;
 }
@@ -709,16 +715,161 @@ aside ul li {
 .div-7{
     margin-top: 35px;
 }
-.div-7-text{
-    margin-top: 47px;
-}
-.div-8-text{
-    margin-top: 30px;
-}
+
+
 .div-8{
     margin-top: 20px;
 }
 .div-9{
     margin-top: 23px;
 }
+.vintage{
+    margin-top: 70px;
+}
+.boots{
+    margin-top: 70px;
+}
+.cat{
+    margin-top: 70px;
+}
 
+.tea{
+    margin-top: 32px;
+}
+
+.items{
+    margin-top: 30px;
+}
+.trousers{
+    margin-top: 70px;
+}
+.pencil{
+    margin-top: 70px;
+}
+.set{
+    margin-top: 65px;
+}
+.tree{
+    margin-top: 65px;
+}
+
+.make-up{
+    margin-top: 65px;
+}
+
+.trigger + [data-is-open] {
+    display: grid;
+    transition: grid-template-rows 0.3s ease;
+}
+.trigger + [data-is-open] ul {
+    overflow: hidden;
+}
+.trigger + [data-is-open="false"] {
+    grid-template-rows: 0fr;
+}
+.trigger + [data-is-open="true"] {
+    grid-template-rows: 1fr;
+}  
+.trigger:has( + [data-is-open="true"]) img {
+    transform: rotate(90deg);
+}
+.trigger {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+}
+.chevron{
+    padding-left: 10px;
+   
+}
+
+.cell{
+    padding-left: 32px;
+    
+}
+.trigger img{
+    padding-right: 8px;
+}
+.img-sh{
+    margin-right: 8px;
+}
+.cell li{
+    width: 227px;
+    height: 40px;
+}
+.cell{
+    padding-top: 10px;
+}
+
+.years input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    border: 2px solid #333; 
+    border-radius: 3px; 
+    vertical-align: middle;
+}
+.years input[type="checkbox"]:checked {
+    background-color: #333; 
+    border: 2px solid #333; 
+}
+
+.cat1 {
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+  
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    
+}
+.cat1 img{
+    width: 20px;
+    height: 20px;
+}
+.cat1 p{
+    
+    margin-top: 4px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    font-size: 12px;
+}
+
+.cat1:hover {
+    background-color: #EBF2FF;
+    transform: scale(1.05);
+    color: #2979FF;
+}
+
+.cat1:active {
+    background-color: #a0a0a5;
+    transform: scale(0.95);
+}
+.cat1 span{
+    font-size: 16px;
+}
+
+.nav-button:hover{
+   
+    transform: scale(1.05);
+    border: none;
+    box-shadow: 0 4px 8px #2264D1;
+    transform: translateY(-1px);
+    transition: transform 0.3s;
+}
+
+.nav-button:active {
+    background-color: #a0a0a5;
+    transform: scale(0.95);
+}
