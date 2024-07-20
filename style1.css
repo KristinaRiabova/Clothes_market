@@ -14,7 +14,7 @@
 
     }
 
-    main{
+    main {
         margin-left: 0;
     }
 
@@ -137,8 +137,8 @@
     .tags-style {
         display: flex;
         justify-content: center;
-        padding-top: 10px;
-        font-size: 7px;
+        padding: 8px;
+        font-size: 10px;
         color: #787885;
 
 
@@ -211,26 +211,31 @@
 
     .product h2 {
         font-size: 13px;
-      
+
         font-family: "Inter", sans-serif;
         font-weight: 600;
     }
-    .tea{
+
+    .tea {
         padding-top: 12px;
     }
-    .vintage{
-        padding-top: 25px;
-    }
-    .boots{
+
+    .vintage {
         padding-top: 25px;
     }
 
-    .cat{
+    .boots {
         padding-top: 25px;
     }
-    .items{
+
+    .cat {
+        padding-top: 25px;
+    }
+
+    .items {
         padding-top: 12px;
     }
+
     .text-product {
         margin-top: -6px;
         font-size: 8px;
@@ -275,42 +280,42 @@
     }
 
     .tags-1 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
     }
 
     .tags-2 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
     }
 
     .tags-3 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
     }
 
     .tags-4 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
     }
 
     .tags-5 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
     }
 
     .tags-6 {
-        width: 80px;
+        width: 110px;
         height: 28px;
         background-color: #EDEDF0;
         border-radius: 99px;
@@ -325,39 +330,50 @@
         width: 30px;
         height: 30px;
     }
-    .div-5{
+
+    .div-5 {
         margin-top: 0px;
     }
+
     .div-4-text {
-         margin-top: 22px;
+        margin-top: 22px;
     }
+
     .div-3 {
         margin-top: 18px;
     }
+
     .div-4 {
         margin-top: 17px;
     }
+
     .div-5-text {
         margin-top: 37px;
     }
-    .pencil{
+
+    .pencil {
         margin-top: -12px;
     }
+
     .div-7 {
         margin-top: 20px;
     }
-    .make-up{
+
+    .make-up {
         margin-top: 22px;
     }
+
     .price-text1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-         margin-top: 0px; 
+        margin-top: 0px;
     }
+
     .div-8 {
         margin-top: 12px;
     }
+
     .deal {
         width: 50px;
         height: 15px;
@@ -371,96 +387,138 @@
         justify-content: center;
         padding-top: 5px;
     }
+
     .div-8 {
         margin-top: 20px;
     }
 
-    .vintage{
+    .vintage {
         margin-top: 10px;
     }
-    .boots{
+
+    .boots {
         margin-top: 10px;
     }
-    .cat{
+
+    .cat {
         margin-top: 10px;
     }
-    .tea{
+
+    .tea {
         margin-top: 10px;
     }
+
     .items {
         margin-top: 15px;
     }
-    .trousers{
+
+    .trousers {
         margin-top: 10px;
     }
-    .set{
+
+    .set {
         margin-top: 10px;
     }
-    .tree{
+
+    .tree {
         margin-top: 10px;
     }
+
     .list-view .product img {
         width: 120px;
 
     }
+
     .list-view .product {
         display: grid;
 
         align-items: center;
         margin-bottom: 10px;
-        
-    }
-    
 
-    
-    .list-view  .product h2{
-        display: none;
-    
     }
-    
-    .list-view .text-product{
+
+
+    .notification {
+        width: 14px;
+        height: 14px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #F44336;
+        border-radius: 99px;
+        position: absolute;
+        right: -7px;
+        top: -4px;
+    }
+
+    .center {
+        position: absolute;
+        top: 10px;
+        left: 7px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+
+    .list-view .product h2 {
+        display: none;
+
+    }
+
+    .list-view .text-product {
         display: none;
     }
-    .list-view .star{
+
+    .list-view .star {
         display: none;
     }
-    .list-view .points{
+
+    .list-view .points {
         display: none;
-    
+
     }
-    .list-view .heartbutton{
+
+    .list-view .heartbutton {
         display: none;
     }
-    .list-view  .product h3{
+
+    .list-view .product h3 {
         font-size: 14px;
         align-items: center;
-       
+
     }
-    .list-view .discount{
+
+    .list-view .discount {
         display: none;
     }
-    .list-view .price-4{
-        display: none;;
+
+    .list-view .price-4 {
+        display: none;
+        ;
     }
-    .list-view .deal{
+
+    .list-view .deal {
         display: none;
     }
 
     .footer-1 {
-        width: 200px;
+
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-2 {
-        width: 200px;
+
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-3 {
-        width: 200px;
+
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-1 h2 {
         font-size: 12px;
         display: flex;
@@ -469,6 +527,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-2 h2 {
         font-size: 12px;
         display: flex;
@@ -477,6 +536,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-3 h2 {
         font-size: 12px;
         display: flex;
@@ -487,7 +547,7 @@
     }
 
     .footer-3 p {
-        font-size:9px;
+        font-size: 9px;
         display: flex;
         justify-content: center;
         margin-top: -10px;
@@ -495,6 +555,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-2 p {
         font-size: 9px;
         display: flex;
@@ -504,6 +565,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-1 p {
         font-size: 9px;
         display: flex;
@@ -513,16 +575,17 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .img-footer {
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
     }
 
-    
-   
+
+
 }
 
-@media only screen and (max-width: 1400px ) and (min-width:1000px) {
+@media only screen and (max-width: 1400px) and (min-width:1000px) {
     header {
 
         padding: 10px;
@@ -542,8 +605,8 @@
 
 
     .search .end-image {
-       width: 20px;
-       height: 20px;
+        width: 20px;
+        height: 20px;
     }
 
     .search .start-image {
@@ -610,12 +673,12 @@
         display: none;
     }
 
-    main{
+    main {
         margin-left: 0;
     }
 
     .footer-content {
-    
+
         margin-top: 20px;
     }
 
@@ -738,26 +801,31 @@
 
     .product h2 {
         font-size: 13px;
-      
+
         font-family: "Inter", sans-serif;
         font-weight: 600;
     }
-    .tea{
+
+    .tea {
         padding-top: 12px;
     }
-    .vintage{
-        padding-top: 25px;
-    }
-    .boots{
+
+    .vintage {
         padding-top: 25px;
     }
 
-    .cat{
+    .boots {
         padding-top: 25px;
     }
-    .items{
+
+    .cat {
+        padding-top: 25px;
+    }
+
+    .items {
         padding-top: 12px;
     }
+
     .text-product {
         margin-top: -6px;
         font-size: 8px;
@@ -852,39 +920,50 @@
         width: 30px;
         height: 30px;
     }
-    .div-5{
+
+    .div-5 {
         margin-top: 0px;
     }
+
     .div-4-text {
-         margin-top: 22px;
+        margin-top: 22px;
     }
+
     .div-3 {
         margin-top: 18px;
     }
+
     .div-4 {
         margin-top: 17px;
     }
+
     .div-5-text {
         margin-top: 37px;
     }
-    .pencil{
+
+    .pencil {
         margin-top: -12px;
     }
+
     .div-7 {
         margin-top: 20px;
     }
-    .make-up{
+
+    .make-up {
         margin-top: 22px;
     }
+
     .price-text1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-         margin-top: 0px; 
+        margin-top: 0px;
     }
+
     .div-8 {
         margin-top: 12px;
     }
+
     .deal {
         width: 50px;
         height: 15px;
@@ -898,78 +977,96 @@
         justify-content: center;
         padding-top: 5px;
     }
+
     .div-8 {
         margin-top: 20px;
     }
 
-    .vintage{
+    .vintage {
         margin-top: 10px;
     }
-    .boots{
+
+    .boots {
         margin-top: 10px;
     }
-    .cat{
+
+    .cat {
         margin-top: 10px;
     }
-    .tea{
+
+    .tea {
         margin-top: 10px;
     }
+
     .items {
         margin-top: 15px;
     }
-    .trousers{
+
+    .trousers {
         margin-top: 10px;
     }
-    .set{
+
+    .set {
         margin-top: 10px;
     }
-    .tree{
+
+    .tree {
         margin-top: 10px;
     }
+
     .list-view .product img {
         width: 120px;
 
     }
+
     .list-view .product {
         display: grid;
 
         align-items: center;
         margin-bottom: 10px;
-        
-    }
-    
 
-    
-    .list-view  .product h2{
-        display: none;
-    
     }
-    
-    .list-view .text-product{
+
+
+
+    .list-view .product h2 {
         display: none;
+
     }
-    .list-view .star{
-        display: none;
-    }
-    .list-view .points{
-        display: none;
-    
-    }
-    .list-view .heartbutton{
+
+    .list-view .text-product {
         display: none;
     }
-    .list-view  .product h3{
+
+    .list-view .star {
+        display: none;
+    }
+
+    .list-view .points {
+        display: none;
+
+    }
+
+    .list-view .heartbutton {
+        display: none;
+    }
+
+    .list-view .product h3 {
         font-size: 14px;
         align-items: center;
-       
+
     }
-    .list-view .discount{
+
+    .list-view .discount {
         display: none;
     }
-    .list-view .price-4{
-        display: none;;
+
+    .list-view .price-4 {
+        display: none;
+        ;
     }
-    .list-view .deal{
+
+    .list-view .deal {
         display: none;
     }
 
@@ -978,16 +1075,19 @@
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-2 {
         width: 300px;
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-3 {
         width: 300px;
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-1 h2 {
         font-size: 12px;
         display: flex;
@@ -996,6 +1096,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-2 h2 {
         font-size: 12px;
         display: flex;
@@ -1004,6 +1105,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-3 h2 {
         font-size: 12px;
         display: flex;
@@ -1014,7 +1116,7 @@
     }
 
     .footer-3 p {
-        font-size:9px;
+        font-size: 9px;
         display: flex;
         justify-content: center;
         margin-top: -10px;
@@ -1022,6 +1124,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-2 p {
         font-size: 9px;
         display: flex;
@@ -1031,6 +1134,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-1 p {
         font-size: 9px;
         display: flex;
@@ -1040,18 +1144,27 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .img-footer {
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
     }
 
-    
-   
+    .center {
+        position: absolute;
+        top: 10px;
+        left: 7px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+
 }
 
 
 
-@media only screen and (max-width: 999px ) and (min-width:700px) {
+@media only screen and (max-width: 999px) and (min-width:700px) {
     header {
 
         padding: 10px;
@@ -1071,8 +1184,8 @@
 
 
     .search .end-image {
-       width: 20px;
-       height: 20px;
+        width: 20px;
+        height: 20px;
     }
 
     .search .start-image {
@@ -1122,9 +1235,10 @@
         display: none;
     }
 
-    main{
+    main {
         margin-left: 0;
     }
+
     .container {
         flex-direction: column;
         padding-top: 10px;
@@ -1145,7 +1259,7 @@
 
 
     .footer-content {
- 
+
         margin-top: 20px;
     }
 
@@ -1268,26 +1382,31 @@
 
     .product h2 {
         font-size: 13px;
-      
+
         font-family: "Inter", sans-serif;
         font-weight: 600;
     }
-    .tea{
+
+    .tea {
         padding-top: 12px;
     }
-    .vintage{
-        padding-top: 25px;
-    }
-    .boots{
+
+    .vintage {
         padding-top: 25px;
     }
 
-    .cat{
+    .boots {
         padding-top: 25px;
     }
-    .items{
+
+    .cat {
+        padding-top: 25px;
+    }
+
+    .items {
         padding-top: 12px;
     }
+
     .text-product {
         margin-top: -6px;
         font-size: 8px;
@@ -1382,39 +1501,50 @@
         width: 30px;
         height: 30px;
     }
-    .div-5{
+
+    .div-5 {
         margin-top: 0px;
     }
+
     .div-4-text {
-         margin-top: 22px;
+        margin-top: 22px;
     }
+
     .div-3 {
         margin-top: 18px;
     }
+
     .div-4 {
         margin-top: 17px;
     }
+
     .div-5-text {
         margin-top: 37px;
     }
-    .pencil{
+
+    .pencil {
         margin-top: -12px;
     }
+
     .div-7 {
         margin-top: 20px;
     }
-    .make-up{
+
+    .make-up {
         margin-top: 22px;
     }
+
     .price-text1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-         margin-top: 0px; 
+        margin-top: 0px;
     }
+
     .div-8 {
         margin-top: 12px;
     }
+
     .deal {
         width: 50px;
         height: 15px;
@@ -1428,78 +1558,96 @@
         justify-content: center;
         padding-top: 5px;
     }
+
     .div-8 {
         margin-top: 20px;
     }
 
-    .vintage{
+    .vintage {
         margin-top: 10px;
     }
-    .boots{
+
+    .boots {
         margin-top: 10px;
     }
-    .cat{
+
+    .cat {
         margin-top: 10px;
     }
-    .tea{
+
+    .tea {
         margin-top: 10px;
     }
+
     .items {
         margin-top: 15px;
     }
-    .trousers{
+
+    .trousers {
         margin-top: 10px;
     }
-    .set{
+
+    .set {
         margin-top: 10px;
     }
-    .tree{
+
+    .tree {
         margin-top: 10px;
     }
+
     .list-view .product img {
         width: 120px;
 
     }
+
     .list-view .product {
         display: grid;
 
         align-items: center;
         margin-bottom: 10px;
-        
-    }
-    
 
-    
-    .list-view  .product h2{
-        display: none;
-    
     }
-    
-    .list-view .text-product{
+
+
+
+    .list-view .product h2 {
         display: none;
+
     }
-    .list-view .star{
-        display: none;
-    }
-    .list-view .points{
-        display: none;
-    
-    }
-    .list-view .heartbutton{
+
+    .list-view .text-product {
         display: none;
     }
-    .list-view  .product h3{
+
+    .list-view .star {
+        display: none;
+    }
+
+    .list-view .points {
+        display: none;
+
+    }
+
+    .list-view .heartbutton {
+        display: none;
+    }
+
+    .list-view .product h3 {
         font-size: 14px;
         align-items: center;
-       
+
     }
-    .list-view .discount{
+
+    .list-view .discount {
         display: none;
     }
-    .list-view .price-4{
-        display: none;;
+
+    .list-view .price-4 {
+        display: none;
+        ;
     }
-    .list-view .deal{
+
+    .list-view .deal {
         display: none;
     }
 
@@ -1508,16 +1656,19 @@
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-2 {
         width: 300px;
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-3 {
         width: 300px;
         height: 100px;
         background-color: #EDEDF0;
     }
+
     .footer-1 h2 {
         font-size: 12px;
         display: flex;
@@ -1526,6 +1677,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-2 h2 {
         font-size: 12px;
         display: flex;
@@ -1534,6 +1686,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
     }
+
     .footer-3 h2 {
         font-size: 12px;
         display: flex;
@@ -1544,7 +1697,7 @@
     }
 
     .footer-3 p {
-        font-size:9px;
+        font-size: 9px;
         display: flex;
         justify-content: center;
         margin-top: -10px;
@@ -1552,6 +1705,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-2 p {
         font-size: 9px;
         display: flex;
@@ -1561,6 +1715,7 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .footer-1 p {
         font-size: 9px;
         display: flex;
@@ -1570,11 +1725,33 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 200;
     }
+
     .img-footer {
-        width:50px;
-        height:50px;
+        width: 50px;
+        height: 50px;
     }
 
-    
-   
+    .notification {
+        width: 14px;
+        height: 14px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #F44336;
+        border-radius: 99px;
+        position: absolute;
+        right: -7px;
+        top: -4px;
+    }
+
+    .center {
+        position: absolute;
+        top: 10px;
+        left: 7px;
+        font-family: "Red Hat Display", sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+
+
 }

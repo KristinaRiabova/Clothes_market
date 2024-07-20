@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     font-family: "Inter", sans-serif;
     margin: 0;
@@ -8,9 +10,10 @@ body {
     background-color: #fff;
 }
 
-main{
+main {
     margin-left: 34px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
@@ -22,16 +25,22 @@ header {
 
 header .logo h1 {
     margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+
 }
-.logo{
-    display: flex ;
+
+.logo {
+    display: flex;
     align-items: center;
-    
+
 }
 
 .logo img {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
+
 header nav ul {
     display: flex;
     list-style: none;
@@ -51,11 +60,20 @@ header nav ul li a {
 header .search input {
     height: 28px;
     font-size: 20px;
-    border: 1px ;
+    border: 1px;
     background-color: #EDEDF0;
     width: 500px;
     border-radius: 99pc;
     padding-left: 45px;
+
+
+}
+
+input::placeholder {
+    font-family: "Inter", sans-serif;
+
+    font-weight: 300;
+    color: #19191D;
 }
 
 
@@ -69,10 +87,11 @@ aside {
     width: 20%;
 
     padding: 20px;
-   
+
 }
 
-aside .category-list, aside .filter {
+aside .category-list,
+aside .filter {
     margin-bottom: 20px;
 }
 
@@ -94,21 +113,22 @@ aside ul {
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    
-    
+
+
 }
 
 .show {
     display: flex;
     align-items: center;
-   
+
 }
 
 .but-img {
     display: flex;
     align-items: center;
-   
+
 }
+
 .but-img button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -128,9 +148,9 @@ aside ul {
 
 
 
- .product {
+.product {
     background-color: #fff;
-    padding: 10px;
+    padding: 12px;
     width: 259px;
     border-radius: 5px;
     box-sizing: border-box;
@@ -146,7 +166,7 @@ aside ul {
     top: 0;
     left: 0;
 
-   
+
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -161,22 +181,24 @@ aside ul {
 }
 
 
- .product h3 {
-   
+.product h3 {
+
     font-size: 16px;
     margin-top: -6px;
     font-family: "Inter", sans-serif;
     font-weight: 300;
 
 }
-.product h2{
+
+.product h2 {
     font-size: 24px;
-    
+
     font-family: "Inter", sans-serif;
     font-weight: 600;
 
 }
- .text-product{
+
+.text-product {
     margin-top: -6px;
     font-size: 14px;
     color: #787885;
@@ -185,7 +207,7 @@ aside ul {
 
 }
 
- .product button {
+.product button {
     background-color: #fff;
     color: #2264d1;
     border: 1px solid #9DC2FF;
@@ -193,13 +215,13 @@ aside ul {
     border-radius: 4px;
     cursor: pointer;
     width: 88px;
-    height: 38  px;
+    height: 38 px;
     font-size: 14px;
     padding-left: 27px;
     margin-top: 5px;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    
+
 }
 
 
@@ -208,13 +230,14 @@ aside ul {
     display: flex;
     justify-content: center;
     font-size: 10px;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     gap: 20px;
-    
+
 
 }
-.cat-clothes{
+
+.cat-clothes {
     display: inline;
     width: 144px;
     height: 56px;
@@ -237,11 +260,12 @@ aside ul {
     padding: 10px 40px;
     border: 1px solid #ccc;
     border-radius: 4px;
-   
-   
+
+
 }
 
-.search .start-image, .search .end-image {
+.search .start-image,
+.search .end-image {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -255,88 +279,102 @@ aside ul {
     right: 10px;
 }
 
-.nav{
+.nav {
     display: flex;
 }
-.tags{
+
+.tags {
     display: flex;
     gap: 10px;
-    
-    
+
+
     align-items: center;
     margin: 20px;
-    
+
 }
-.cat-sh{
+
+.cat-sh {
     display: flex;
     height: 40px;
 }
-.cat-sh li{
+
+.cat-sh li {
     margin-top: 3px;
     font-size: 16px;
 }
 
-.img-sh{
+.img-sh {
     width: 24px;
     height: 24px;
 
 }
-.all-cat{
+
+.all-cat {
     display: flex;
 }
-.all-text{
+
+.all-text {
     display: flow;
     margin-bottom: 12px;
 }
-.img-sh-all{
+
+.img-sh-all {
     width: 24px;
     height: 24px;
     margin-right: 8px;
     margin-top: 8px;
 }
-.all-cat p{
+
+.all-cat p {
     font-size: 14px;
     margin: 0;
 }
-.cat-another{
+
+.cat-another {
     margin-left: 10px;
     margin-top: -10px;
 }
-.star-button{
+
+.star-button {
     display: flex;
     justify-content: space-between;
 }
-.star{
+
+.star {
     width: 16px;
     height: 16px;
 }
-.heartbutton .heart{
+
+.heartbutton .heart {
     position: absolute;
     margin-top: 11px;
-    padding-left: 5px;  
+    padding-left: 5px;
     height: 28px;
     width: 28px;
 }
-.star-img{
+
+.star-img {
     display: flex;
     margin-top: 15px;
     margin-left: -5px;
 }
-.points{
+
+.points {
     font-size: 14px;
     margin-right: 15px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
     padding-top: 2px;
-   
-    
+
+
 }
 
-.cat-clothes p{
+.cat-clothes p {
     font-size: 10px;
 }
-.nav-button{
+
+.nav-button {
     width: 104px;
     height: 40px;
     border-radius: 5px;
@@ -346,13 +384,16 @@ aside ul {
     font-family: "Quicksand", sans-serif;
     font-weight: 700;
     color: #2264D1;
+    position: relative;
 
-    
+
 }
-.nav{
+
+.nav {
     gap: 15px;
 }
-.show button{
+
+.show button {
     width: 85px;
     height: 30px;
     border: none;
@@ -361,7 +402,7 @@ aside ul {
     border-radius: 2px;
     color: #787885;
     font-family: "Inter", sans-serif;
-   
+
 }
 
 
@@ -374,18 +415,18 @@ aside ul {
 }
 
 
-.button-with-image{
+.button-with-image {
     width: 68px;
     height: 30px;
     border: none;
     border-radius: 2px;
     background-color: #EBF2FF;
-   
+
 }
 
 
 
-.filter{
+.filter {
     background-color: #F7F7FA;
     border-radius: 4px;
     width: 304px;
@@ -393,72 +434,59 @@ aside ul {
 
 }
 
-.years li{
+.years li {
     margin-bottom: 20px;
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
-.year{
+
+.year {
 
     font-family: "Inter", sans-serif;
     font-weight: 500;
 
 }
-.years{
+
+.years {
 
     padding-left: 7px;
-   
+
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     gap: 15px;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     justify-content: center;
     margin-top: 30px;
 }
 
 
-.footer-blocks p{
+.footer-blocks p {
     display: flex;
     width: 361px;
-   
+
     height: 156px;
 
 }
 
-.img-footer{
+.img-footer {
     width: 80px;
     height: 80px;
-   
-  
+
+
 
 }
 
-.footer-1{
+.footer-1 {
     width: 361px;
     height: 156px;
     background-color: #EDEDF0;
-    
+
 }
-.footer-1 h2{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 700;
-}
-.footer-2 h2{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 700;
-}
-.footer-3 h2{
+
+.footer-1 h2 {
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -467,35 +495,37 @@ aside ul {
     font-weight: 700;
 }
 
-.footer-2{
+.footer-2 h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+.footer-3 h2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+}
+
+.footer-2 {
     width: 361px;
     height: 156px;
     background-color: #EDEDF0;
 }
-.footer-3{
+
+.footer-3 {
     width: 361px;
     height: 156px;
     background-color: #EDEDF0;
 }
-.footer-1 p{
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    color: #5A5B6A;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 200;
-}
-.footer-2 p{
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    color: #5A5B6A;
-    font-family: "Quicksand", sans-serif;
-    font-weight: 200;
-}
-.footer-3 p{
+
+.footer-1 p {
     font-size: 14px;
     display: flex;
     justify-content: center;
@@ -505,86 +535,121 @@ aside ul {
     font-weight: 200;
 }
 
+.footer-2 p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    color: #5A5B6A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+}
 
-.tags-1{
+.footer-3 p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    color: #5A5B6A;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 200;
+}
+
+
+.tags-1 {
     width: 160px;
     height: 28px;
     background-color: #EDEDF0;
     border-radius: 99px;
 }
-.tags-style{
+
+.tags-style {
     display: flex;
     justify-content: center;
     padding-top: 5px;
     font-size: 14px;
     color: #787885;
 }
-.tags-2{
+
+.tags-2 {
     width: 104px;
     height: 28px;
     background-color: #EDEDF0;
     border-radius: 99px;
 }
-.tags-3{
+
+.tags-3 {
     width: 74px;
     height: 28px;
     background-color: #EDEDF0;
     border-radius: 99px;
 }
-.tags-4{
+
+.tags-4 {
     width: 120px;
     height: 28px;
     background-color: #EDEDF0;
     border-radius: 99px;
 }
-.tags-5{
+
+.tags-5 {
     width: 122px;
     height: 28px;
-    background-color:  #EDEDF0;
+    background-color: #EDEDF0;
     border-radius: 99px;
 }
-.tags-6{
+
+.tags-6 {
     width: 152px;
     height: 28px;
     background-color: #EDEDF0;
     border-radius: 99px;
 }
-.related{
+
+.related {
     font-size: 14px;
 }
-.top-categories{
+
+.top-categories {
     color: #787885;
 }
-.computers p{
+
+.computers p {
     font-size: 14px;
     margin: 0;
 }
-.img-3{
+
+.img-3 {
     margin-top: 8px;
 }
-.block{
+
+.block {
     margin-top: 15px;
 }
-.all-text h2{
+
+.all-text h2 {
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
-.all-text p{
-    color: #787885;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-}
-.cat-sh li{
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-}
-.cat-sh p{
+
+.all-text p {
     color: #787885;
     font-family: "Inter", sans-serif;
     font-weight: 300;
 }
 
-.filter-chevron{
+.cat-sh li {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.cat-sh p {
+    color: #787885;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+}
+
+.filter-chevron {
     display: flex;
     gap: 90px;
     align-items: center;
@@ -593,33 +658,36 @@ aside ul {
     padding-right: 10px;
 }
 
-.filter-chevron img{
+.filter-chevron img {
     height: 24px;
     width: 24px;
-    
+
 }
 
 
 
-.price-text{
+.price-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 26px;
 
 }
-.price-text1{
+
+.price-text1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 36px;
 }
-.price-4{
+
+.price-4 {
     font-size: 24px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
 }
-.discount{
+
+.discount {
     width: 70px;
     height: 20px;
     background-color: #ECF7ED;
@@ -632,7 +700,8 @@ aside ul {
     justify-content: center;
     padding-top: 5px;
 }
-.deal{
+
+.deal {
     width: 70px;
     height: 20px;
     background-color: #FDEDF2;
@@ -653,7 +722,7 @@ aside ul {
     flex-direction: row;
     align-items: center;
     margin-bottom: 10px;
-    
+
 }
 
 .list-view .product img {
@@ -663,143 +732,181 @@ aside ul {
 }
 
 
-.list-view  .product h2{
+.list-view .product h2 {
     display: none;
 
 }
 
-.list-view .text-product{
+.list-view .text-product {
     display: none;
 }
-.list-view .star{
+
+.list-view .star {
     display: none;
 }
-.list-view .points{
+
+.list-view .points {
     display: none;
 
 }
-.list-view .heartbutton{
+
+.list-view .heartbutton {
     display: none;
 }
-.list-view  .product h3{
+
+.list-view .product h3 {
     font-size: 14px;
     align-items: center;
-   
+
 }
-.list-view .discount{
+
+.list-view .discount {
     display: none;
 }
-.list-view .price-4{
-    display: none;;
+
+.list-view .price-4 {
+    display: none;
+    ;
 }
-.list-view .deal{
+
+.list-view .deal {
     display: none;
 }
 
 .div-3 {
     margin-top: 30px;
 }
+
 .div-4 {
     margin-top: 27px;
 }
+
 .div-4-text {
     margin-top: 52px;
 }
 
-.div-5{
+.div-5 {
     margin-top: 30px;
 }
-.div-6-text{
+
+.div-6-text {
     margin-top: 35px;
 }
-.div-7{
+
+.div-7 {
     margin-top: 35px;
 }
 
 
-.div-8{
+.div-8 {
     margin-top: 20px;
 }
-.div-9{
-    margin-top: 23px;
+
+.div-9 {
+    margin-top: 19px;
 }
-.vintage{
-    margin-top: 70px;
-}
-.boots{
-    margin-top: 70px;
-}
-.cat{
+
+.vintage {
     margin-top: 70px;
 }
 
-.tea{
+.boots {
+    margin-top: 70px;
+}
+
+.cat {
+    margin-top: 70px;
+}
+
+.tea {
     margin-top: 32px;
 }
 
-.items{
+.items {
     margin-top: 30px;
 }
-.trousers{
+
+.trousers {
     margin-top: 70px;
 }
-.pencil{
+
+.pencil {
     margin-top: 70px;
 }
-.set{
-    margin-top: 65px;
-}
-.tree{
+
+.set {
     margin-top: 65px;
 }
 
-.make-up{
+.tree {
     margin-top: 65px;
 }
 
-.trigger + [data-is-open] {
+.make-up {
+    margin-top: 65px;
+}
+
+.trigger+[data-is-open] {
     display: grid;
     transition: grid-template-rows 0.3s ease;
 }
-.trigger + [data-is-open] ul {
+
+.trigger+[data-is-open] ul {
     overflow: hidden;
 }
-.trigger + [data-is-open="false"] {
+
+.trigger+[data-is-open="false"] {
     grid-template-rows: 0fr;
 }
-.trigger + [data-is-open="true"] {
+
+.trigger+[data-is-open="true"] {
     grid-template-rows: 1fr;
-}  
-.trigger:has( + [data-is-open="true"]) img {
+}
+
+.trigger:has(+ [data-is-open="true"]) img {
     transform: rotate(90deg);
 }
+
 .trigger {
     display: flex;
     align-items: center;
+
+
+}
+
+.chevron .trigger {
     height: 40px;
-
 }
-.chevron{
+
+.chevron {
     padding-left: 10px;
-   
+
 }
 
-.cell{
+.cell {
     padding-left: 32px;
-    
+
 }
-.trigger img{
+
+.trigger img {
     padding-right: 8px;
 }
-.img-sh{
+
+.img-sh {
     margin-right: 8px;
 }
-.cell li{
+
+.cell li {
     width: 227px;
-    height: 40px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+
 }
-.cell{
-    padding-top: 10px;
+
+.phone {
+    height: 30px;
+
 }
 
 .years input[type="checkbox"] {
@@ -810,20 +917,21 @@ aside ul {
     width: 14px;
     height: 14px;
     margin-right: 10px;
-    border: 2px solid #333; 
-    border-radius: 3px; 
+    border: 2px solid #333;
+    border-radius: 3px;
     vertical-align: middle;
 }
+
 .years input[type="checkbox"]:checked {
-    background-color: #333; 
-    border: 2px solid #333; 
+    background-color: #333;
+    border: 2px solid #333;
 }
 
 .cat1 {
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
-  
+
     transition: transform 0.3s, background-color 0.3s;
     cursor: pointer;
     display: flex;
@@ -831,14 +939,16 @@ aside ul {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    
+
 }
-.cat1 img{
+
+.cat1 img {
     width: 20px;
     height: 20px;
 }
-.cat1 p{
-    
+
+.cat1 p {
+
     margin-top: 4px;
     margin-left: 0;
     margin-bottom: 0;
@@ -856,12 +966,13 @@ aside ul {
     background-color: #a0a0a5;
     transform: scale(0.95);
 }
-.cat1 span{
+
+.cat1 span {
     font-size: 16px;
 }
 
-.nav-button:hover{
-   
+.nav-button:hover {
+
     transform: scale(1.05);
     border: none;
     box-shadow: 0 4px 8px #2264D1;
@@ -872,4 +983,35 @@ aside ul {
 .nav-button:active {
     background-color: #a0a0a5;
     transform: scale(0.95);
+}
+
+.notification {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #F44336;
+    border-radius: 99px;
+    position: absolute;
+    right: -7px;
+    top: -4px;
+}
+
+.shipping {
+    font-weight: 500;
+}
+
+.logo-img {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.center {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
 }
