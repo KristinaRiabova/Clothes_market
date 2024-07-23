@@ -39,7 +39,8 @@
 
     }
 
-    .top-categories {
+
+    .categories {
         display: grid;
         justify-content: center;
         font-size: 8px;
@@ -47,8 +48,7 @@
         text-align: center;
         gap: 10px;
         grid-template-columns: repeat(3, 1fr);
-
-
+        padding: 10px;
     }
 
     .top-categories img {
@@ -144,12 +144,20 @@
 
     }
 
+    .cat1 p {
+        margin-top: 4px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 10px;
+    }
+
     .tags {
         display: grid;
         gap: 10px;
         align-items: center;
         margin: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         justify-items: center;
 
     }
@@ -209,7 +217,7 @@
         font-weight: 300;
     }
 
-    .product h2 {
+    .product h4 {
         font-size: 13px;
 
         font-family: "Inter", sans-serif;
@@ -393,35 +401,43 @@
     }
 
     .vintage {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .boots {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .cat {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .tea {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .items {
-        margin-top: 15px;
+        margin-top: -5px;
     }
 
     .trousers {
-        margin-top: 10px;
+        margin-top: -5px;
+    }
+
+    .pencil {
+        margin-top: -18px;
     }
 
     .set {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .tree {
-        margin-top: 10px;
+        margin-top: -5px;
+    }
+
+    .make-up {
+        margin-top: 20px;
     }
 
     .list-view .product img {
@@ -487,6 +503,8 @@
         align-items: center;
 
     }
+
+
 
     .list-view .discount {
         display: none;
@@ -585,7 +603,7 @@
 
 }
 
-@media only screen and (max-width: 1400px) and (min-width:1000px) {
+@media only screen and (max-width: 1450px) and (min-width:1000px) {
     header {
 
         padding: 10px;
@@ -599,17 +617,19 @@
         width: 500px;
         height: 15px;
         font-size: 18px;
-
-
     }
 
+    .search .start-image {
+        width: 20px;
+        height: 20px;
+    }
 
     .search .end-image {
         width: 20px;
         height: 20px;
     }
 
-    .search .start-image {
+    .search .end-image img {
         width: 20px;
         height: 20px;
     }
@@ -624,10 +644,9 @@
         font-family: "Quicksand", sans-serif;
         font-weight: 700;
         color: #2264D1;
-
     }
 
-    .top-categories {
+    .categories {
         display: grid;
         justify-content: center;
         font-size: 12px;
@@ -635,9 +654,10 @@
         text-align: center;
         gap: 10px;
         grid-template-columns: repeat(6, 1fr);
-
+        padding: 20px;
 
     }
+
 
     .top-categories img {
         width: 20px;
@@ -799,7 +819,7 @@
         font-weight: 300;
     }
 
-    .product h2 {
+    .product h4 {
         font-size: 13px;
 
         font-family: "Inter", sans-serif;
@@ -807,19 +827,19 @@
     }
 
     .tea {
-        padding-top: 12px;
+        padding-top: 10px;
     }
 
     .vintage {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .boots {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .cat {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .items {
@@ -995,23 +1015,27 @@
     }
 
     .tea {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .items {
-        margin-top: 15px;
+        margin-top: -5px;
     }
 
     .trousers {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .set {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .tree {
-        margin-top: 10px;
+        margin-top: -5px;
+    }
+
+    .pencil {
+        margin-top: -17px;
     }
 
     .list-view .product img {
@@ -1183,10 +1207,20 @@
     }
 
 
+
     .search .end-image {
+
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .search .end-image img {
+
         width: 20px;
         height: 20px;
     }
+
 
     .search .start-image {
         width: 20px;
@@ -1206,16 +1240,16 @@
 
     }
 
-    .top-categories {
+
+    .categories {
         display: grid;
         justify-content: center;
         font-size: 12px;
         align-items: center;
         text-align: center;
         gap: 10px;
-        grid-template-columns: repeat(6, 1fr);
-
-
+        grid-template-columns: repeat(4, 1fr);
+        padding: 5px;
     }
 
     .top-categories img {
@@ -1380,7 +1414,7 @@
         font-weight: 300;
     }
 
-    .product h2 {
+    .product h4 {
         font-size: 13px;
 
         font-family: "Inter", sans-serif;
@@ -1392,7 +1426,7 @@
     }
 
     .vintage {
-        padding-top: 25px;
+        padding-top: 20px;
     }
 
     .boots {
@@ -1406,6 +1440,7 @@
     .items {
         padding-top: 12px;
     }
+
 
     .text-product {
         margin-top: -6px;
@@ -1564,35 +1599,43 @@
     }
 
     .vintage {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .boots {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .cat {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .tea {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .items {
-        margin-top: 15px;
+        margin-top: -5px;
     }
 
     .trousers {
-        margin-top: 10px;
+        margin-top: -5px;
+    }
+
+    .pencil {
+        margin-top: -18px;
     }
 
     .set {
-        margin-top: 10px;
+        margin-top: -5px;
     }
 
     .tree {
-        margin-top: 10px;
+        margin-top: -5px;
+    }
+
+    .make-up {
+        margin-top: 20px;
     }
 
     .list-view .product img {

@@ -1,11 +1,22 @@
-document.getElementById('list-view-btn').addEventListener('click', function () {
-    document.getElementById('product-grid').classList.add('list-view');
-    document.getElementById('product-grid').classList.remove('grid-view');
-});
+document.addEventListener('DOMContentLoaded', function () {
+   
+    document.getElementById('list-view-btn').addEventListener('click', function () {
+        document.getElementById('product-grid').classList.add('list-view');
+        document.getElementById('product-grid').classList.remove('grid-view');
+    });
 
-document.getElementById('grid-view-btn').addEventListener('click', function () {
-    document.getElementById('product-grid').classList.add('grid-view');
-    document.getElementById('product-grid').classList.remove('list-view');
+    document.getElementById('grid-view-btn').addEventListener('click', function () {
+        document.getElementById('product-grid').classList.add('grid-view');
+        document.getElementById('product-grid').classList.remove('list-view');
+    });
+
+    
+    const searchInput = document.getElementById('search-input');
+    const closeImage = document.querySelector('.end-image');
+
+    closeImage.addEventListener('click', function () {
+        searchInput.value = '';
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -214,15 +225,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const searchInput = document.getElementById('search-input');
-    const closeImage = document.querySelector('.end-image');
-
-
-    closeImage.addEventListener('click', function () {
-        searchInput.value = '';
-    });
-});
 
 document.querySelectorAll('.trigger').forEach(trigger => {
     trigger.addEventListener('click', () => {
